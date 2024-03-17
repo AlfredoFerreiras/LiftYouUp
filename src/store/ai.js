@@ -56,7 +56,6 @@ export const addTodoItemAsync = (todoItem) => async (dispatch) => {
 export const submitAIResultsAsIdeas = (aiResults, companyId) => {
   return async (dispatch) => {
     try {
-      console.log();
       const token = window.localStorage.getItem(TOKEN);
       aiResults?.map(async (result) => {
         const response = await axios.post(

@@ -5,7 +5,6 @@ require("dotenv").config();
 
 // Access your API key as an environment variable (see "Set up your API key" above)
 const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY);
-console.log(genAI);
 
 // ...
 
@@ -25,8 +24,6 @@ router.post("/improve-company", async (req, res) => {
     const response = await result.response;
     1;
     const text = await response.text();
-
-    console.log("Generated Ideas:", text);
 
     // Return the generated ideas as a response
     res.json({

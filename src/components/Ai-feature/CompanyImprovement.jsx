@@ -11,8 +11,6 @@ const CompanyImprovements = () => {
   );
   const [aiIdeas, setAiIdeas] = useState([]);
 
-  console.log(aiIdeas);
-
   useEffect(() => {
     if (company && company.companyName && company.description) {
       dispatch(
@@ -42,7 +40,6 @@ const CompanyImprovements = () => {
           goal: company.goal,
         })
       ).then(setAiIdeas); // Refresh AI ideas
-      console.log("Regenerating AI ideas with:", company);
     }
   };
 

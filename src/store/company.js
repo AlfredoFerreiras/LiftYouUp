@@ -73,9 +73,6 @@ export const createCompanyThunk = (companyData) => async (dispatch) => {
 export const updateCompanyIdeas = (companyId, ideas) => {
   return async (dispatch) => {
     try {
-      console.log("Updating ideas for company ID:", companyId);
-      console.log("Ideas to update:", ideas);
-
       // Ensure the Authorization header is correctly configured
       const token = window.localStorage.getItem("token");
 
@@ -102,9 +99,6 @@ export const updateCompanyIdeas = (companyId, ideas) => {
 export const addCompanyToIdeasThunk = (companyId, ideas) => {
   return async (dispatch) => {
     try {
-      console.log("Updating ideas for company ID:", companyId);
-      console.log("Ideas to update:", ideas);
-
       // Ensure the Authorization header is correctly configured
       const token = window.localStorage.getItem("token");
 
@@ -161,14 +155,14 @@ export const fetchSingleCompany = (id) => async (dispatch) => {
 export const fetchSingleCompanyWithIdeas = (id) => async (dispatch) => {
   try {
     const token = window.localStorage.getItem("token");
-    console.log(id);
+
     const response = await axios.get(`/api/companies/${id}/ideas`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
     });
     const company = response.data;
-    console.log("company in redux store fetchSingleCompanyWithIDeas", company);
+
     dispatch(getSingleCompanyIdeas(company));
   } catch (error) {
     console.error("Failed to fetch company:", error.response.data);

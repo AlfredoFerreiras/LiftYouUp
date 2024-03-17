@@ -1,6 +1,6 @@
 const Sequelize = require("sequelize");
 const pkg = require("../../package.json");
-
+const databaseName = pkg.name;
 const config = {
   logging: false,
 };
@@ -19,7 +19,8 @@ if (process.env.DATABASE_URL) {
 }
 
 const db = new Sequelize(
-  `postgres://postgres:Steph0796@localhost:5432/liftyouup`,
+  process.env.DATABASE_URL || `postgres://localhost:5432/${databaseName}`,
   config
 );
+
 module.exports = db;

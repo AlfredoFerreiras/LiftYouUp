@@ -36,8 +36,6 @@ router.post("/improve-company", async (req, res) => {
       ],
     });
 
-    console.log("COMPLETIONS", completion.choices[0].message.content);
-
     // Cache and return the results
     const results = completion.choices[0].message.content
       .split("\n")
