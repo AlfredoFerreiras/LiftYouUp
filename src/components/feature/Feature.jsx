@@ -1,5 +1,5 @@
 import React from "react";
-import FooterWithSocialLinks from "../footer/Footer";
+
 import SlidePricing from "../price-cards/PriceCards";
 
 const features = [

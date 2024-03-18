@@ -18,12 +18,6 @@ const createIdea = (idea) => ({
 
 // Example of dispatching addTodoItem with an AI-generated idea
 
-// Action Creators
-const setAIResults = (results) => ({
-  type: SET_AI_RESULTS,
-  results,
-});
-
 // In your Redux action file
 
 // Assuming you're using Redux Thunk middleware

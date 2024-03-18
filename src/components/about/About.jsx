@@ -12,7 +12,7 @@ const AboutUs = () => {
         </div>
         <div className="grid grid-cols-1 gap-16 md:grid-cols-2 md:gap-8">
           <img
-            alt="About us image"
+            alt="we need this information"
             src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?ixlib=rb-4.0.3&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
             className="rounded-lg shadow-md"
           />
@@ -36,7 +36,7 @@ const AboutUs = () => {
             </p>
           </div>
           <img
-            alt="Why choose us image"
+            alt="more info needed sorry :("
             src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?ixlib=rb-4.0.3&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
             className="rounded-lg shadow-md"
           />

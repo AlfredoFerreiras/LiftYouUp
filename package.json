@@ -37,7 +37,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "node server/index.js --ignore dist/ --ignore src/",
+    "start": "react-scripts start --ignore dist/ --ignore src/",
     "start:windows": "npm-run-all --parallel seed start-react start-server",
     "start-react": "react-scripts start",
     "start-server": " cross-env JWT=shh nodemon server",
