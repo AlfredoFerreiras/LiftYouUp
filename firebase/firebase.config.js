@@ -20,16 +20,6 @@ import {
   orderBy,
 } from "firebase/firestore";
 
-// Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyBo_dlndgnk9OAodWLvAzfRJiESYFIGEKQ",
-  authDomain: "liftyouup-d9453.firebaseapp.com",
-  projectId: "liftyouup-d9453",
-  storageBucket: "liftyouup-d9453.appspot.com",
-  messagingSenderId: "560307119784",
-  appId: "1:560307119784:web:5dc0c615385fc43f37049d",
-};
-
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
