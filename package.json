@@ -40,7 +40,7 @@
     "yarn": "^1.22.22"
   },
   "scripts": {
-    "start": "node server/index.js --ignore dist/ --ignore src/",
+    "start": "npm run seed && npm run start-server && npm run start-react --ignore dist/ --ignore src/",
     "start:windows": "npm-run-all --parallel seed start-react start-server",
     "start-react": "react-scripts start",
     "start-server": " cross-env JWT=shh nodemon server",
