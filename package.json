@@ -1,7 +1,7 @@
 {
   "name": "liftyouup",
   "version": "0.1.0",
-  "proxy": "http://localhost:8080",
+  "proxy": "https://liftyouup.onrender.com/",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@google/generative-ai": "^0.3.0",

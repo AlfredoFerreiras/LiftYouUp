@@ -3,7 +3,7 @@ const express = require("express");
 const morgan = require("morgan");
 const app = express();
 const cors = require("cors");
-const url = "http://localhost:8080/";
+const url = "http://localhost:8080/" || "https://liftyouup.onrender.com/";
 require("dotenv").config();
 module.exports = app;
 
