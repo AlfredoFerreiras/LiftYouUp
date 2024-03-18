@@ -1,6 +1,7 @@
 {
   "name": "liftyouup",
   "version": "0.1.0",
+  "proxy": "http://localhost:8080",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@google/generative-ai": "^0.3.0",
@@ -39,12 +40,11 @@
     "yarn": "^1.22.22"
   },
   "scripts": {
-    "start": "react-scripts start && npm run start-server",
-    "start:windows": "npm-run-all --parallel seed start-react start-server",
+    "start": "npm-run-all --parallel start-server start-react",
     "start-react": "react-scripts start",
-    "start-server": "  nodemon server start-react",
-    "build:dev": "npm run build -- --watch --mode=development",
+    "start-server": "cross-env JWT=shh nodemon server/index.js",
     "build": "react-scripts build",
+    "postinstall": "npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "seed": "node script/seed.js",
