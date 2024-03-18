@@ -4,6 +4,7 @@ const morgan = require("morgan");
 const app = express();
 const cors = require("cors");
 const url = "http://localhost:8080/";
+require("dotenv").config();
 module.exports = app;
 
 // logging middleware

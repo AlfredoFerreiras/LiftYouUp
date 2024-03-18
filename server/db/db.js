@@ -1,6 +1,8 @@
 const Sequelize = require("sequelize");
 const pkg = require("../../package.json");
 const databaseName = pkg.name;
+require("dotenv").config();
+
 const config = {
   logging: false,
 };

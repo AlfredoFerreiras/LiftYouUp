@@ -10,6 +10,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@vercel/postgres": "^0.7.2",
     "axios": "^1.6.7",
     "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
@@ -37,7 +38,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start --ignore dist/ --ignore src/",
+    "start": "npm run seed && react-scripts start --ignore dist/ --ignore src/",
     "start:windows": "npm-run-all --parallel seed start-react start-server",
     "start-react": "react-scripts start",
     "start-server": " cross-env JWT=shh nodemon server",
